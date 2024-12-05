@@ -1,0 +1,60 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1dE76-sRo0DlguVlO2cwbtMKPOsx2Nzw_8E_FdGxGD3g/edit?usp=sharing -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login/ SignUp Project</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="top">
+        <img src="logo.png" alt="logo" />
+        <h1 id="title">Welcome There!</h1>
+        <p id="description">
+          Login to your account and let's get that productivity soaring!
+        </p>
+      </div>
+      
+      <form>
+        <div>
+          <label>Username</label>
+          <br />
+          <input id="username" type="text" required />
+        </div>
+
+        <div>
+          <label>Password</label>
+          <br />
+          <input id="password" type="password" required />
+        </div>
+
+        <div id="confirm-password-container" style="display: none">
+          <label>Confirm Password</label>
+          <br />
+          <input id="confirm-password" type="password" />
+        </div>
+
+        <button id="form-button" type="button" onclick="handleSubmit()">
+          Login
+        </button>
+        <p>
+          <span id="account-auth-description">Don't have an account?</span>
+          <span id="account-auth-title" onclick="toggleAuth()">Sign up</span>
+        </p>
+      </form>
+    </main>
+
+    <div id="cover">
+      <img src="cover.png" alt="cover" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
